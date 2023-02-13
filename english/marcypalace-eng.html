@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Marcy&rsquo;s Palace</title>
+
+    <link rel="stylesheet" href="../css/sad.css">
+    <link rel="stylesheet" href="../css/marcypalace.css">
+    <link rel="stylesheet" href="../css/popuptest.css">
+    <link rel="stylesheet" href="../css/footer.css">
+  </head>
+​
+  <body>
+    
+    <nav class="sideNav">
+      <a href="#" class="closeBtn">x</a>
+      <a href="../index.html">Home</a>
+      <a href="marcypalace-eng.html">Marcy&rsquo;s Palace</a>
+      <a href="hallofwarriors-eng.html">Warriors</a>
+      <a href="palacearena-eng.html">Invicta 2021</a>
+      <a href="robot-eng.html">Robot</a>
+      <a href="peachgrove-eng.html">Our History</a>
+      <a href="noodleshop-eng.html">Allies</a>
+      <a href="../french/index-fr.html">French</a>
+  </nav>
+
+  <button class="openSideNav">
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+  </button>
+
+      <header>
+        <h1 class="header-txt">Marcy&rsquo;s palace</h1>
+        <h2 class="header-desc">Welcome to Marcy&rsquo;s palace. In your world, you call it Sainte-Marcelline College. This school is home to our brightest, renowned warriors.</h2>
+      </header>
+
+<div class="content-background">
+
+<!-- POPUP -->
+<aside class="popup" onclick="myFunction()">
+  <img src="../images/icon-oog.PNG" alt="Master Oogway Icon" width="220px">
+  <span class="popuptext" id="myPopup">Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called present. Marcy&rsquo;s palace will guide you and teach you all of it&rsquo;s great values.
+  </span>
+</aside>
+
+<!-- CONTENT -->
+  <section class="content">
+    <p class="text">We brought you here to help us defeat a threat that has been around for years - <i>Invicta</i>! During your journey in the valley of peace, you&rsquo;ll sharpen your skills to become a great warrior. You&rsquo;ll be able to train and gain both knowledge and power to defeat Invicta. </p>
+    <img class="school-img" src="../images/marcypalace.png" alt="Marcy Palace">
+    <p class="text">  Marcy&rsquo;s Palace is an institution with a tremendously warm, family-like, atmosphere that many warriors have called home since 1967. Students from different parts of the world entered its doors and walked its hallways, making diversity one of its many qualities. We will guide you through your journey and we wish you the best of luck. 
+    </p>
+    <iframe class="model" src="https://marcelline5.autodesk360.com/shares/public/SH56a43QTfd62c1cd968ba04e3d482d43eea?mode=embed" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+  </section>
+</div>
+
+<!--FOOTER-->
+<footer>
+  <section class="ft-main">
+  <section class="ft-section">
+      <h2 class="ft-title">Explore</h2>
+      <ul class="u-list">
+        <li class="list-item"><a href="../index.html" class="ft-link">Home</a></li>
+        <li class="list-item"><a href="marcypalace-eng.html" class="ft-link">Marcy&rsquo;s Palace</a></li>
+        <li class="list-item"><a href="hallofwarriors-eng.html" class="ft-link">Warriors</a></li>
+        <li class="list-item"><a href="palacearena-eng.html" class="ft-link">Invicta 2021</a></li>
+        <li class="list-item"><a href="robot-eng.html" class="ft-link">Robot</a></li>
+        <li class="list-item"><a href="peachgrove-eng.html" class="ft-link">Our History</a></li>
+        <li class="list-item"><a href="noodleshop-eng.html" class="ft-link">Allies</a></li>
+        <li class="list-item"><a href="../french/index-fr.html" class="ft-link">French</a></li>
+      </ul>
+  </section>
+  <section class="ft-section">
+      <h2 class="ft-title">Credits</h2>
+        <p>Drawings by Victoria Hoang</p>
+        <p>Pictures by Emily Hoang, Camille Jean-Fran&ccedil;ois and Catherine Louca</p>
+        <p>Based on DreamWorks&rsquo; Kung Fu Panda</p>
+      <br>
+      <p>&copy; 2021 Marcelline Robotics</p>
+  </section>
+  </section>
+</footer>
+
+<script>
+  let openBtn = document.querySelector(".openSideNav");
+  openBtn.addEventListener("click", () => {
+     showNav();
+  });
+  let closeBtn = document.querySelector(".closeBtn");
+  closeBtn.addEventListener("click", () => {
+     hideNav();
+  });
+  function showNav() {
+     document.querySelector(".sideNav").style.width = "300px";
+     document.querySelector('.main-content').style.marginLeft = "300px";
+  }
+  function hideNav() {
+     document.querySelector(".sideNav").style.width = "0";
+     document.querySelector('.main-content').style.marginLeft = "0px";
+  }
+  </script>
+
+<!--js for popup-->
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+</script>
+
+</body>​
+</html>

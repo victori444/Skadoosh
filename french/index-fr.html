@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page d'accueil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <link rel="stylesheet" href="../css/footer.css">
+<style media="screen">
+    body{
+        margin: 0;
+    }
+    img {
+        width: 100%;
+        margin-bottom: -10px;
+    }
+</style>
+
+<img src="../backgrounds/map-fr.jpg" alt="Carte de la page d'accueil" usemap="#menumap">
+​
+<map name="menumap">
+    <area alt="Robot" title="Robot" href="../french/robot-fr.html" coords="1029,282,1009,282,972,282,948,280,934,267,934,292,920,309,905,312,884,298,900,321,909,326,909,346,902,362,914,378,943,396,963,405,979,421,1000,432,1011,461,1029,479,1045,498,1067,518,1070,529,1119,523,1142,523,1144,541,1165,543,1167,556,1131,500,1101,468,1077,455,1058,427,1070,403,1077,382,1074,328,1099,307,1067,316,1054,294,1054,271" shape="poly">
+    <area alt="Invicta 2021" title="Invicta 2021" href="../french/palacearena-fr.html" coords="1122,516,1049,536,1034,554,1020,552,1029,561,1025,568,1004,581,1009,586,1009,636,1072,636,1029,699,959,808,977,815,1025,821,1095,706,1133,640,1251,636,1325,595,1328,556,1312,561,1312,543,1325,529,1316,536,1296,518,1224,541,1194,550,1201,563,1167,561,1167,543,1147,552,1144,527" shape="poly">
+    <area alt="Guerri&egrave;res" title="Guerri&egrave;res" href="../french/hallofwarriors-fr.html" coords="1551,341,1468,378,1346,382,1266,523,1194,547,1194,559,1169,554,1233,457,1285,382,1224,380,1226,359,1264,341,1269,316,1253,316,1233,289,1262,305,1294,307,1357,305,1418,305,1436,301,1447,289,1456,303,1502,294,1533,280,1556,267,1549,280,1533,294,1536,332,1549,321" shape="poly">
+    <area alt="Palais Marcy" title="Palais Marcy" href="../french/marcypalace-fr.html" coords="1459,167,1454,160,1445,172,1341,172,1330,160,1325,156,1328,172,1323,192,1303,206,1287,210,1255,196,1271,215,1285,224,1300,237,1298,244,1289,253,1273,251,1282,260,1296,278,1280,289,1260,292,1237,287,1257,301,1287,305,1323,305,1364,303,1395,307,1418,303,1443,294,1459,294,1484,294,1511,285,1540,278,1518,262,1515,258,1536,246,1545,235,1536,242,1518,239,1515,215,1529,201,1538,192,1522,196,1504,201,1481,196,1465,178" shape="poly">
+    <area alt="Notre Histoire" title="Notre Histoire" href="../french/peachgrove-fr.html" coords="1787,497,1766,518,1732,522,1705,536,1660,531,1633,520,1603,520,1628,495,1646,491,1665,488,1676,466,1687,443,1660,450,1633,441,1608,427,1619,407,1635,393,1619,377,1635,362,1662,332,1683,332,1707,332,1732,350,1769,362,1800,384,1814,400,1845,418,1857,423,1834,436,1821,459,1796,461,1778,482" shape="poly">
+    <area alt="Alli&eacute;s" title="Alli&eacute;s" href="../french/noodleshop-fr.html" coords="1298,789,1296,696,1309,683,1339,674,1346,656,1380,651,1391,662,1395,669,1461,672,1484,651,1533,665,1549,685,1545,787,1508,794,1479,803,1420,803,1375,798,1334,787" shape="poly">
+</map>
+
+<!--FOOTER-->
+<footer>
+    <section class="ft-main">
+    <section class="ft-section">
+        <h2 class="ft-title">Explorez</h2>
+        <ul class="u-list">
+          <li class="list-item"><a href="index-fr.html" class="ft-link">Page d'accueil</a></li>
+          <li class="list-item"><a href="../french/marcypalace-fr.html" class="ft-link">Palais Marcy</a></li>
+          <li class="list-item"><a href="../french/hallofwarriors-fr.html" class="ft-link">Guerri&egrave;res</a></li>
+          <li class="list-item"><a href="../french/palacearena-fr.html" class="ft-link">Invicta 2021</a></li>
+          <li class="list-item"><a href="../french/robot-fr.html" class="ft-link">Robot</a></li>
+          <li class="list-item"><a href="../french/peachgrove-fr.html" class="ft-link">Notre Histoire</a></li>
+          <li class="list-item"><a href="../french/noodleshop-fr.html" class="ft-link">Alli&eacute;s</a></li>
+          <li class="list-item"><a href="../index.html" class="ft-link">Anglais</a></li>
+        </ul>
+    </section>
+    <section class="ft-section">
+        <h2 class="ft-title">Remerciements</h2>
+          <p>Dessins par Victoria Hoang</p>
+          <p>Photos par Emily Hoang, Camille Jean-Fran&ccedil;ois et Catherine Louca</p>
+          <p>Bas&eacute; sur Kung Fu Panda de DreamWorks</p>
+        <br>
+        <p>&copy; 2021 Robotique Marcelline</p>
+    </section>
+    </section>
+  </footer>
+
+<script src="../css/jquery.min.js"></script>
+​
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});
+</script>
+
+</body>
+</html>

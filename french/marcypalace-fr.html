@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>Palais Marcy</title>
+
+    <link rel="stylesheet" href="../css/sad.css">
+    <link rel="stylesheet" href="../css/marcypalace.css">
+    <link rel="stylesheet" href="../css/popuptest.css">
+    <link rel="stylesheet" href="../css/footer.css">
+  </head>
+​
+  <body>
+    
+    <nav class="sideNav">
+      <a href="#" class="closeBtn">x</a>
+      <a href="index-fr.html">Page d'accueil</a>
+      <a href="marcypalace-fr.html">Palais Marcy</a>
+      <a href="hallofwarriors-fr.html">Guerri&egrave;res</a>
+      <a href="palacearena-fr.html">Invicta 2021</a>
+      <a href="robot-fr.html">Robot</a>
+      <a href="peachgrove-fr.html">Notre Histoire</a>
+      <a href="noodleshop-fr.html">Alli&eacute;s</a>
+      <a href="../index.html">Anglais</a>
+  </nav>
+
+  <button class="openSideNav">
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+      <div class="hamburger"></div>
+  </button>
+
+      <header>
+        <h1 class="header-txt">Palais Marcy</h1>
+        <h2 class="header-desc">Bienvenue au Palais Marcy. Dans votre monde, vous l&rsquo;appelez le Coll&egrave;ge Sainte-Marcelline. Cette &eacute;cole est la maison de nos plus brillantes guerri&egrave;res.</h2>
+      </header>
+
+<div class="content-background">
+
+<!-- POPUP -->
+<aside class="popup" onclick="myFunction()">
+  <img src="../images/icon-oog.PNG" alt="Icon de Master Oogway" width="220px">
+  <span class="popuptext" id="myPopup">Hier est derri&egrave;re, demain est myst&egrave;re et aujourd&rsquo;hui est un cadeau, c&rsquo;est pour cela qu&rsquo;on l&rsquo;appelle le pr&eacute;sent.
+  </span>
+</aside>
+
+<!-- CONTENT -->
+  <section class="content">
+    <p class="text">Vous vous &ecirc;tes retrouv&eacute;s ici, parce que nous avons besoin de votre aide pour combattre une menace qui s&egrave;me la terreur depuis plusieurs ann&eacute;es... Invicta.</p>
+    <img class="school-img" src="../images/marcypalace.png" alt="Palais Marcy">
+    <p class="text"> Durant votre p&eacute;riple dans la Vall&eacute;e de la Paix, vous allez apprendre les valeurs qu&rsquo;une grande guerri&egrave;re poss&egrave;de. De plus, vous allez acqu&eacute;rir de nouvelles connaissances ainsi qu&rsquo;une force qui vous &eacute;tait alors m&eacute;connue dans le but de battre Invicta. Le Palais Marcy est un &eacute;tablissement chaleureux o&ugrave;  r&egrave;gne une atmosph&egrave;re familiale que les guerri&egrave;res appellent leur deuxi&egrave;me maison. En 1967, cette &eacute;cole francophone priv&eacute;e r&eacute;serv&eacute;e aux filles a officiellement &eacute;t&eacute; cr&eacute;&eacute;e. Le coll&egrave;ge ouvre ses portes &agrave; des &eacute;l&egrave;ves venant de partout dans le monde. La diversit&eacute; est une de nos plus belles qualit&eacute;s. Nous vous souhaitons la meilleure des chances.  
+    </p>
+  </section>
+  <iframe class="model" src="https://marcelline5.autodesk360.com/shares/public/SH56a43QTfd62c1cd968ba04e3d482d43eea?mode=embed" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+</div>
+
+<!--FOOTER-->
+<footer>
+  <section class="ft-main">
+  <section class="ft-section">
+      <h2 class="ft-title">Explorez</h2>
+      <ul class="u-list">
+        <li class="list-item"><a href="index-fr.html" class="ft-link">Page d'accueil</a></li>
+        <li class="list-item"><a href="../french/marcypalace-fr.html" class="ft-link">Palais Marcy</a></li>
+        <li class="list-item"><a href="../french/hallofwarriors-fr.html" class="ft-link">Guerri&egrave;res</a></li>
+        <li class="list-item"><a href="../french/palacearena-fr.html" class="ft-link">Invicta 2021</a></li>
+        <li class="list-item"><a href="../french/robot-fr.html" class="ft-link">Robot</a></li>
+        <li class="list-item"><a href="../french/peachgrove-fr.html" class="ft-link">Notre Histoire</a></li>
+        <li class="list-item"><a href="../french/noodleshop-fr.html" class="ft-link">Alli&eacute;s</a></li>
+        <li class="list-item"><a href="../index.html" class="ft-link">Anglais</a></li>
+      </ul>
+  </section>
+  <section class="ft-section">
+      <h2 class="ft-title">Remerciements</h2>
+        <p>Dessins par Victoria Hoang</p>
+        <p>Photos par Emily Hoang, Camille Jean-Fran&ccedil;ois et Catherine Louca</p>
+        <p>Bas&eacute; sur Kung Fu Panda de DreamWorks</p>
+      <br>
+      <p>&copy; 2021 Robotique Marcelline</p>
+  </section>
+  </section>
+</footer>
+
+<script>
+  let openBtn = document.querySelector(".openSideNav");
+  openBtn.addEventListener("click", () => {
+     showNav();
+  });
+  let closeBtn = document.querySelector(".closeBtn");
+  closeBtn.addEventListener("click", () => {
+     hideNav();
+  });
+  function showNav() {
+     document.querySelector(".sideNav").style.width = "300px";
+     document.querySelector('.main-content').style.marginLeft = "300px";
+  }
+  function hideNav() {
+     document.querySelector(".sideNav").style.width = "0";
+     document.querySelector('.main-content').style.marginLeft = "0px";
+  }
+  </script>
+
+<!--js for popup-->
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+</script>
+
+</body>​
+</html>

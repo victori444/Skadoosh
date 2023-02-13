@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+       Le Magasin de Nouilles
+    </title>
+  </head>
+​
+  <body>
+    <link rel="stylesheet" href="../css/noodleshop.css">
+    <link rel="stylesheet" href="../css/popuptest.css">
+​    <link rel="stylesheet" href="../css/sad.css">
+    <link rel="stylesheet" href="../css/footer.css">
+​
+<nav class="sideNav">
+  <a href="#" class="closeBtn">x</a>
+  <a href="index-fr.html">Page d'accueil</a>
+  <a href="marcypalace-fr.html">Palais Marcy</a>
+  <a href="hallofwarriors-fr.html">Guerri&egrave;res</a>
+  <a href="palacearena-fr.html">Invicta 2021</a>
+  <a href="robot-fr.html">Robot</a>
+  <a href="peachgrove-fr.html">Notre Histoire</a>
+  <a href="noodleshop-fr.html">Alli&eacute;s</a>
+  <a href="../index.html">Anglais</a>
+</nav>
+
+<button class="openSideNav">
+  <div class="hamburger"></div>
+  <div class="hamburger"></div>
+  <div class="hamburger"></div>
+</button>
+
+<!--header-->
+<header>
+  <h1 class="header-txt">Nos Alli&eacute;s</h1>
+</header>
+
+<div class="content-background">
+
+<!--POPUP-->
+<aside class="popup" onclick="myFunction()">
+  <img src="../images/icon-ping.png" alt="Icon de M. Ping" width="220px">
+  <span class="popuptext" id="myPopup">Pour faire quelque chose de sp&eacute;cial, il suffit de croire que c&rsquo;est sp&eacute;cial. Tout le monde a cet aperçu d&rsquo;un guerrier. C&rsquo;est maintenant votre chance de prouver que vous &ecirc;tes digne d&rsquo;en &ecirc;tre un.
+  </span>
+</aside>
+
+<!-- CONTENT -->
+<section class="content">
+    <p><img class="dj-image" src='../images/desjardins.png' alt="Desjardins Caisse de Bordeaux-Cartierville-Saint-Laurent" height="200px" ></p>
+    <p class="text"> Robotique Marcelline tenait &agrave; remercier la Caisse Desjardins de Bordeaux-Cartierville-Saint-Laurent pour leur soutien durant toutes ces ann&eacute;es, nous poussant &agrave; toujours viser plus haut et &agrave; d&eacute;passer nos limites pour gagner de plus grandes batailles.  
+    </p>
+    <p class="text">Nous, les guerri&egrave;res,  esp&eacute;rons &ecirc;tre &agrave; la hauteur de leurs attentes et donner une performance exceptionnelle. Sans leur contribution, nous n&rsquo;aurions pas eu la chance de r&eacute;aliser ce projet. Merci grandement! </p>
+    <img class="dj-zoom" src="../images/desjardins2.png" alt="Rencontre ZOOM avec Desjardins Caisse de Bordeaux-Cartierville-Saint-Laurent representatives">
+</section>
+
+<!--FOOTER-->
+<footer>
+  <section class="ft-main">
+  <section class="ft-section">
+      <h2 class="ft-title">Explorez</h2>
+      <ul class="u-list">
+        <li class="list-item"><a href="index-fr.html" class="ft-link">Page d'accueil</a></li>
+        <li class="list-item"><a href="../french/marcypalace-fr.html" class="ft-link">Palais Marcy</a></li>
+        <li class="list-item"><a href="../french/hallofwarriors-fr.html" class="ft-link">Guerri&egrave;res</a></li>
+        <li class="list-item"><a href="../french/palacearena-fr.html" class="ft-link">Invicta 2021</a></li>
+        <li class="list-item"><a href="../french/robot-fr.html" class="ft-link">Robot</a></li>
+        <li class="list-item"><a href="../french/peachgrove-fr.html" class="ft-link">Notre Histoire</a></li>
+        <li class="list-item"><a href="../french/noodleshop-fr.html" class="ft-link">Alli&eacute;s</a></li>
+        <li class="list-item"><a href="../index.html" class="ft-link">Anglais</a></li>
+      </ul>
+  </section>
+  <section class="ft-section">
+      <h2 class="ft-title">Remerciements</h2>
+        <p>Dessins par Victoria Hoang</p>
+        <p>Photos par Emily Hoang, Camille Jean-Fran&ccedil;ois et Catherine Louca</p>
+        <p>Bas&eacute; sur Kung Fu Panda de DreamWorks</p>
+      <br>
+      <p>&copy; 2021 Robotique Marcelline</p>
+  </section>
+  </section>
+</footer>
+
+<script>
+  let openBtn = document.querySelector(".openSideNav");
+  openBtn.addEventListener("click", () => {
+     showNav();
+  });
+  let closeBtn = document.querySelector(".closeBtn");
+  closeBtn.addEventListener("click", () => {
+     hideNav();
+  });
+  function showNav() {
+     document.querySelector(".sideNav").style.width = "300px";
+     document.querySelector('.main-content').style.marginLeft = "300px";
+  }
+  function hideNav() {
+     document.querySelector(".sideNav").style.width = "0";
+     document.querySelector('.main-content').style.marginLeft = "0px";
+  }
+  </script>
+
+​<!--js for popup-->
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+</script>
+
+  </body>
+</html>

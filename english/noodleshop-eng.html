@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+       The Noodle Shop
+    </title>
+  </head>
+​
+  <body>
+    <link rel="stylesheet" href="../css/noodleshop.css">
+    <link rel="stylesheet" href="../css/popuptest.css">
+​    <link rel="stylesheet" href="../css/sad.css">
+    <link rel="stylesheet" href="../css/footer.css">
+​
+<nav class="sideNav">
+  <a href="#" class="closeBtn">x</a>
+  <a href="../index.html">Home</a>
+  <a href="marcypalace-eng.html">Marcy&rsquo;s Palace</a>
+  <a href="hallofwarriors-eng.html">Warriors</a>
+  <a href="palacearena-eng.html">Invicta 2021</a>
+  <a href="robot-eng.html">Robot</a>
+  <a href="peachgrove-eng.html">Our History</a>
+  <a href="noodleshop-eng.html">Allies</a>
+  <a href="../french/index-fr.html">French</a>
+</nav>
+
+<button class="openSideNav">
+  <div class="hamburger"></div>
+  <div class="hamburger"></div>
+  <div class="hamburger"></div>
+</button>
+
+<!--header-->
+<header>
+  <h1 class="header-txt">Our Allies</h1>
+</header>
+
+<div class="content-background">
+
+<!--POPUP-->
+<aside class="popup" onclick="myFunction()">
+  <img src="../images/icon-ping.PNG" alt="Mr. Ping Icon" width="220px">
+  <span class="popuptext" id="myPopup">To make something special you just have to believe it is special. Everyone has that glimpse of a warrior. Now is your chance to prove that you are worthy of being one.</span>
+</aside>
+
+<!-- CONTENT -->
+<section class="content">
+    <p><img class="dj-image" src='../images/desjardins.png' alt="Desjardins Caisse de Bordeaux-Cartierville-Saint-Laurent" height="200px" ></p>
+    <p class="text"> On behalf of <i>Marcelline Robotics</i>, we would like to express our sincerest thanks to Caisse Desjardins de Bordeaux-Cartierville-Saint-Laurent that gave us the support, that pushed us to always aim for the best results so as not to disappoint our fair contributors and motivators, thus we sought to consistently surpass our limits. This year, the team at Caisse Desjardins de Bordeaux-Cartierville-Saint-Laurent gave us funding that&rsquo;s going to help us defeat <i>Invicta</i>. 
+    </p>
+    <p class="text">For many years, Dejardins has been helping us and we hope that we can keep doing what we do and reach even greater goals as well as winning bigger battles in the future. We hope to live up to the expectations from the previous years, because without their contribution we would not have been able to achieve our purpose.</p>
+    <img class="dj-zoom" src="../images/desjardins2.png" alt="ZOOM Meeting with Desjardins Caisse de Bordeaux-Cartierville-Saint-Laurent representatives">
+</section>
+
+<!--FOOTER-->
+<footer>
+  <section class="ft-main">
+  <section class="ft-section">
+      <h2 class="ft-title">Explore</h2>
+      <ul class="u-list">
+        <li class="list-item"><a href="../index.html" class="ft-link">Home</a></li>
+        <li class="list-item"><a href="marcypalace-eng.html" class="ft-link">Marcy&rsquo;s Palace</a></li>
+        <li class="list-item"><a href="hallofwarriors-eng.html" class="ft-link">Warriors</a></li>
+        <li class="list-item"><a href="palacearena-eng.html" class="ft-link">Invicta 2021</a></li>
+        <li class="list-item"><a href="robot-eng.html" class="ft-link">Robot</a></li>
+        <li class="list-item"><a href="peachgrove-eng.html" class="ft-link">Our History</a></li>
+        <li class="list-item"><a href="noodleshop-eng.html" class="ft-link">Allies</a></li>
+        <li class="list-item"><a href="../french/index-fr.html" class="ft-link">French</a></li>
+      </ul>
+  </section>
+  <section class="ft-section">
+      <h2 class="ft-title">Credits</h2>
+        <p>Drawings by Victoria Hoang</p>
+        <p>Pictures by Emily Hoang, Camille Jean-Fran&ccedil;ois and Catherine Louca</p>
+        <p>Based on DreamWorks&rsquo; Kung Fu Panda</p>
+      <br>
+      <p>&copy; 2021 Marcelline Robotics</p>
+  </section>
+  </section>
+</footer>
+
+<script>
+  let openBtn = document.querySelector(".openSideNav");
+  openBtn.addEventListener("click", () => {
+     showNav();
+  });
+  let closeBtn = document.querySelector(".closeBtn");
+  closeBtn.addEventListener("click", () => {
+     hideNav();
+  });
+  function showNav() {
+     document.querySelector(".sideNav").style.width = "300px";
+     document.querySelector('.main-content').style.marginLeft = "300px";
+  }
+  function hideNav() {
+     document.querySelector(".sideNav").style.width = "0";
+     document.querySelector('.main-content').style.marginLeft = "0px";
+  }
+  </script>
+
+​<!--js for popup-->
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+</script>
+
+  </body>
+</html>

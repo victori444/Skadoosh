@@ -1,0 +1,52 @@
+.sideNav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(167, 207, 172);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+ }
+ .sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #27312a;
+    font-family: sans-serif;
+    display: block;
+    transition: 0.3s;
+ }
+ .sidenav a:hover {
+    color: #f1f1f1;
+ }
+
+ .sideNav .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+ }
+ button {
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    background-color: rgb(167, 207, 172);
+    padding: 10px 15px;
+    border-radius: 20%;
+    margin: 10px;
+    z-index: 1;
+ }
+ .main-content{
+    transition: 0.5s;
+ }
+
+ .hamburger {
+    width: 30px;
+    height: 5px;
+    background-color: #27312a;
+    margin: 6px 0;
+  }

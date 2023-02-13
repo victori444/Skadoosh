@@ -1,0 +1,157 @@
+body {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+header {
+	background-image: url('../backgrounds/palacearena.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 850px;
+	margin-top: -73px;
+	margin-bottom: 20px;
+}
+.header-txt {
+	color: white;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 80px;
+	line-height: 80px;
+	padding-top: 340px;
+}
+.header-desc {
+	color: white;
+	font-size: 23px;
+	font-family: sans-serif;
+	font-weight: 100;
+  font-weight: 200;
+	text-align: center;
+	padding: 0px 100px 0px 100px;
+  overflow: auto;
+}
+
+.content-background {
+	background-image: url('https://media.istockphoto.com/photos/paper-old-texture-background-picture-id954549046?k=6&m=954549046&s=612x612&w=0&h=c_Lyo7YXcJxti9y64W-sR9xXfh4nhOWDFpYbDqWCXzs=');
+	background-position: center;
+	background-size: cover;
+	margin-top: -20px;
+}
+
+.section {
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.text {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 30px;
+  display: block;
+}
+
+.img {
+  padding: 20px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.img-half {
+  width: 47%;
+  padding: 10px 5px;
+}
+
+.img-3 {
+	width: 27%;
+	padding: 20px 20px;
+}
+
+.model {
+  width: 100%;
+  height: 500px;
+  padding: 15px 0px;
+}
+
+.tutorial {
+  font-size: 40px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: black;
+}
+
+.video {
+	width: 50%;
+	height: 400px;
+	margin-left:25% ;
+	margin-bottom: 20px;
+}
+
+/* MOBILE */
+@media only screen and (max-width:1024px) {
+  /* For tablets: */
+	header {
+  	height: 800px;
+  }
+  .header-txt {
+  	padding: 300px 60px 0px 60px;
+  }
+  .model {
+	  width: 90%;
+  }
+  .img {
+	  width: 80%;
+  }
+  .img-3 {
+	width: 57%;
+	padding: 10px 20px;
+	margin-left:10%;
+}
+}
+
+@media only screen and (max-width:700px) {
+  /* For mobile phones: */
+	header {
+		height: 600px;
+		margin-bottom: 0px;
+	}
+
+	.header-txt {
+		font-size: 65px;
+		line-height: 70px;
+		padding-top: 220px;
+	}
+
+	.header-desc {
+		font-size: 18px;
+	}
+	.img-half {
+		width: 90%;
+	}
+	.model {
+		width: 100%;
+		height: 500px;
+		padding: 15px 5px;
+	}
+	.img-3 {
+		width: 60%;
+		padding: 10px 20px;
+		margin-left:10%;
+	}
+	.video {
+		width: 80%;
+		height: 250px;
+		margin-left: 10%;
+		margin-bottom: 20px;
+	}
+	.text {
+		font-size: 17px;
+	}
+}
